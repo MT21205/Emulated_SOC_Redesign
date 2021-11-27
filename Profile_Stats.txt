@@ -1,0 +1,155 @@
+         4809 function calls (4767 primitive calls) in 0.039 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       68    0.022    0.000    0.023    0.000 {built-in method io.open}
+       65    0.003    0.000    0.003    0.000 {method 'close' of '_io.TextIOWrapper' objects}
+       24    0.002    0.000    0.002    0.000 {built-in method nt.stat}
+        3    0.002    0.001    0.002    0.001 {built-in method builtins.print}
+        8    0.001    0.000    0.001    0.000 {built-in method io.open_code}
+        2    0.001    0.000    0.001    0.001 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:12(__init__)
+        8    0.001    0.000    0.001    0.000 {method 'read' of '_io.BufferedReader' objects}
+        8    0.001    0.000    0.001    0.000 {built-in method marshal.loads}
+       40    0.001    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:91(_path_join)
+        1    0.000    0.000    0.038    0.038 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Main.py:1(<module>)
+       68    0.000    0.000    0.000    0.000 {built-in method _locale._getdefaultlocale}
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+       12    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+       32    0.000    0.000    0.014    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:20(__init__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:166(_get_module_lock)
+        1    0.000    0.000    0.001    0.001 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Register.py:1(<module>)
+        1    0.000    0.000    0.025    0.025 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:1(<module>)
+       68    0.000    0.000    0.001    0.000 C:\Python\Python39\lib\_bootlocale.py:11(getpreferredencoding)
+        8    0.000    0.000    0.004    0.000 <frozen importlib._bootstrap_external>:916(get_code)
+     1231    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+       32    0.000    0.000    0.011    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:33(__init__)
+        8    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap_external>:1505(find_spec)
+     1046    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+      8/1    0.000    0.000    0.039    0.039 <frozen importlib._bootstrap>:1002(_find_and_load)
+       64    0.000    0.000    0.024    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:9(__init__)
+       16    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:361(cache_from_source)
+        8    0.000    0.000    0.003    0.000 <frozen importlib._bootstrap>:901(_find_spec)
+       13    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_decode}
+      8/1    0.000    0.000    0.039    0.039 <frozen importlib._bootstrap>:659(_load_unlocked)
+       21    0.000    0.000    0.001    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Decode.py:42(Decode_Instruction)
+        8    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap_external>:1036(get_data)
+        8    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:486(_init_module_attrs)
+      160    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+       40    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:114(<listcomp>)
+       48    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:112(release)
+       65    0.000    0.000    0.000    0.000 C:\Python\Python39\lib\codecs.py:186(__init__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:696(spec_from_file_location)
+       96    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        8    0.000    0.000    0.003    0.000 <frozen importlib._bootstrap_external>:1374(_get_spec)
+       20    0.000    0.000    0.001    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\ALU.py:53(ALU_Perform_Operation)
+       16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:127(_path_split)
+      8/1    0.000    0.000    0.039    0.039 <frozen importlib._bootstrap_external>:844(exec_module)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:87(acquire)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:560(_classify_pyc)
+       16    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+       24    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:79(_unpack_uint32)
+      8/1    0.000    0.000    0.039    0.039 <frozen importlib._bootstrap>:967(_find_and_load_unlocked)
+      136    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        8    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:645(_compile_bytecode)
+        8    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+       48    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:129(<genexpr>)
+       16    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+      8/1    0.000    0.000    0.038    0.038 {built-in method builtins.exec}
+       48    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:231(_verbose_message)
+        1    0.000    0.000    0.001    0.001 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:48(OP_Write_to_File)
+        8    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:558(module_from_spec)
+        1    0.000    0.000    0.002    0.002 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\ALU.py:1(<module>)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:185(cb)
+        1    0.000    0.000    0.002    0.002 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:37(Set_Output_Port)
+       56    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+      114    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       24    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap_external>:135(_path_stat)
+       20    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Decode.py:23(Get_Register_Address)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:491(_get_cached)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1500(_get_spec)
+       32    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+      8/1    0.000    0.000    0.038    0.038 <frozen importlib._bootstrap>:220(_call_with_frames_removed)
+       16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:385(cached)
+       40    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+       33    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Register.py:16(__init__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:593(_validate_timestamp_pyc)
+        1    0.000    0.000    0.000    0.000 C:\Python\Python39\lib\encodings\cp1252.py:18(encode)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:58(__init__)
+        8    0.000    0.000    0.003    0.000 <frozen importlib._bootstrap_external>:1406(find_spec)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:160(__exit__)
+        8    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1077(path_stats)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:1(<module>)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:156(__enter__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:523(_check_name_wrapper)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Decode.py:1(<module>)
+       13    0.000    0.000    0.000    0.000 C:\Python\Python39\lib\encodings\cp1252.py:22(decode)
+       24    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:878(__exit__)
+       24    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        8    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:145(_path_is_mode_type)
+        1    0.000    0.000    0.001    0.001 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:44(OP_Display_Data)
+       24    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:874(__enter__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:35(_new_module)
+       23    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:31(Get_Data)
+       24    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:64(_relax_case)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:351(__init__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:398(parent)
+       40    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+       40    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+        8    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:154(_path_isfile)
+       24    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       20    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Decode.py:28(Get_Immx_Data)
+        8    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:736(find_spec)
+        2    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+       24    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1337(_path_importer_cache)
+       20    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\ALU.py:28(Set_Source_Registers)
+       40    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Register.py:28(Get_Register_Data)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:152(__init__)
+       16    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        8    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:811(find_spec)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1006(__init__)
+       20    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\ALU.py:40(Set_Instruction_Operation_Types)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Custom_Exceptions.py:2(<module>)
+       16    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+       16    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:74(__init__)
+       20    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\ALU.py:34(Set_Immediate_Data)
+       20    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Decode.py:34(Get_Instruction_Operation_Type)
+       15    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Register.py:35(Set_Register_Data)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\defines.py:1(<module>)
+        1    0.000    0.000    0.001    0.001 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:69(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        8    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+       20    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\ALU.py:46(Get_ALU_Result)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\ALU.py:6(ALU)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\ALU.py:17(__init__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1031(get_filename)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Decode.py:5(Decode)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:406(has_location)
+        3    0.000    0.000    0.000    0.000 C:\Python\Python39\lib\codecs.py:260(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_encode}
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:5(Memory)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:841(create_module)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Register.py:9(Register)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:31(Output_Port)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:25(Set_Input_Port)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:19(Input_Port)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Port.py:6(Port)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Custom_Exceptions.py:2(Divide_By_Zero)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:68(Data_Memory)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:51(Set_Data)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Custom_Exceptions.py:3(__init__)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:73(Inst_Memory)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Custom_Exceptions.py:7(Invalid_Instruction)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Memory.py:24(Get_Memory_Size)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Custom_Exceptions.py:12(Memory_Out_Of_Bound)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Custom_Exceptions.py:8(__init__)
+        1    0.000    0.000    0.000    0.000 d:\College\IIITD\Others\OOPD_Exec\SOC_Redesign\Decode.py:16(__init__)
+
+
