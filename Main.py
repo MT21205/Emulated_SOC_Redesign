@@ -9,6 +9,7 @@ from defines import *
 
 
 def Print_Instruction_Processed(cnt, Inst_Type, Op_Type, RS1_Addr, RS2_Addr, RD_Addr, RS1, RS2, RD, Imm_Data):
+    print("-------------------------------------------------------------------------------")
     if(Inst_Type == REGISTER_REGISTER_TYPE):
         if(Op_Type == AND):
             print("{}. R[{}] <- R[{}] & R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
@@ -28,22 +29,36 @@ def Print_Instruction_Processed(cnt, Inst_Type, Op_Type, RS1_Addr, RS2_Addr, RD_
             print("{}. R[{}] <- R[{}] >> R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
         else:
             pass
+        print("Operation outcome:")
+        print("R[{}] = {},  R[{}] = {},  R[{}] = {}".format(RD_Addr, RD, RS1_Addr, RS1, RS2_Addr, RS2))
 
     elif(Inst_Type == IMMEDIATE_TYPE):
         print("{}. R[{}] <- R[{}] + {}".format(cnt, RD_Addr, RS1_Addr, Imm_Data))
+        print("Operation outcome:")
+        print("R[{}] = {},  R[{}] = {},  Imm_data = {}".format(RD_Addr, RD, RS1_Addr, RS1, Imm_Data))
     elif(Inst_Type == LOAD_TYPE):
         print("{}. R[{}] <- {}(R[{}])".format(cnt, RD_Addr, Imm_Data, RS1_Addr))
+        print("Operation outcome:")
+        print("R[{}] = {}, Contents of Address {} = {}".format(RD_Addr, RD, RS1+Imm_Data, RD))
     elif(Inst_Type == STORE_TYPE):
-        print("{}. {}(R[{}]) <- R[{}]".format(cnt, Imm_Data, RS2_Addr, RS1_Addr))
+        print("{}. {}(R[{}]) <- R[{}]".format(cnt, Imm_Data, RS1_Addr, RS2_Addr))
+        print("Operation outcome:")
+        print("Contents of Addr {} = {}".format(RS1+Imm_Data, RS2))
     elif(Inst_Type == BRANCH_TYPE):
-        print("{}. if(R[{}] == R[{}]) , PC = {})".format(cnt, RS1_Addr, RS2_Addr, RD))
+        print("{}. if(R[{}] == R[{}]) , PC = {}".format(cnt, RS1_Addr, RS2_Addr, RD))
     elif(Inst_Type == PORT_IN_TYPE):
         print("{}. R[31] <- In_P[{}]".format(cnt, RD_Addr))
+        print("Operation outcome:")
+        print("In_P[{}] = {}".format(RD_Addr, RD))
     elif(Inst_Type == PORT_OUT_TYPE):
         print("{}. Out_P[{}] <- R[31] ".format(cnt, RD_Addr))
+        print("Operation outcome:")
+        print("Out_P[{}] = {}".format(RD_Addr, Reg[31].Get_Register_Data()))
     else:
         pass
+    print("-------------------------------------------------------------------------------\n\n")
     pass
+
 
 # Creation of Objects to the Memory, Decode, ALU and the Register classes
 DE = Decode()

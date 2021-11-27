@@ -29,7 +29,7 @@ class Input_Port(Port):
     def Set_Port_Data(self, Data):
         self.__Data = Data
         # Register 31 is the destination register that stores the content input from any port input
-        Reg[31] = self.__Data
+        Reg[31].Set_Register_Data(self.__Data)
 
 ## Class for the Output Ports
 class Output_Port(Port):
@@ -39,7 +39,7 @@ class Output_Port(Port):
         self.__Addr = Addr
 
     def Set_Port_Data(self):
-        self.__Data = Reg[31]
+        self.__Data = Reg[31].Get_Register_Data()
 
         self.OP_Display_Data()
         self.OP_Write_to_File()
