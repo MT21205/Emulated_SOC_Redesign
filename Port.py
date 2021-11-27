@@ -1,6 +1,7 @@
 from defines import INPUT_PORT_CNT
 from defines import OUTPUT_PORT_CNT
 from Register import Reg
+from abc import abstractmethod
 
 ## Class for the Port Units
 class Port:
@@ -12,8 +13,11 @@ class Port:
         # Clearing the Port data before the start of the execution
         fp = open(Output_Port_File_Name,'w')
         fp.close()
-        
+
+    @abstractmethod
+    def Set_Port_Data(self):
         pass
+    
 
 ## Class for the Input Ports
 class Input_Port(Port):
@@ -22,7 +26,7 @@ class Input_Port(Port):
         self.__Addr = Addr
 
 
-    def Set_Input_Port(self, Data):
+    def Set_Port_Data(self, Data):
         self.__Data = Data
         # Register 31 is the destination register that stores the content input from any port input
         Reg[31] = self.__Data
@@ -34,7 +38,7 @@ class Output_Port(Port):
         super().__init__()
         self.__Addr = Addr
 
-    def Set_Output_Port(self, Data):
+    def Set_Port_Data(self, Data):
         self.__Data = Reg[31]
 
         self.OP_Display_Data()
