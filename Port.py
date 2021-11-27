@@ -38,7 +38,7 @@ class Output_Port(Port):
         super().__init__()
         self.__Addr = Addr
 
-    def Set_Port_Data(self, Data):
+    def Set_Port_Data(self):
         self.__Data = Reg[31]
 
         self.OP_Display_Data()

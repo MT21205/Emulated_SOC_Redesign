@@ -115,7 +115,7 @@ while(PC != Instructions_Cnt):
 
     # Output the required data onto the Output port for PORT_OUT_TYPE instructions.
     elif(Instruction_Type == PORT_OUT_TYPE):
-        Out_Port[RD_Addr].Set_Port_Data(Result)
+        Out_Port[RD_Addr].Set_Port_Data()
     else:
         pass
     
