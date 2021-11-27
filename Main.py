@@ -35,7 +35,18 @@ while(PC != Instructions_Cnt):
         pass
 
     # If the Instruction is valid, Decode the Instruction.
-    Operation_Validity = DE.Decode_Instruction(Instruction)
+    DE.Set_Instruction(Instruction)
+
+    # If the Decoded Instruction is valid, extract the register address, Inst, Operation Types and the Immediate Data.
+    ## RS1_Addr         : Address of source register 1
+    ## RS2_Addr         : Address of source register 2
+    ## RD_Addr          : Address of destination register
+    ## Instruction_Type : Type of Instruction under execution
+    ## Operation_Type   : Type of operation to be  executed
+    ## Immediate_Data   : Immediate data that can be added to RD or to compute the target address  
+
+
+    Operation_Validity, Instruction_Type, Operation_Type, RS1_Addr, RS2_Addr, RD_Addr, Immediate_Data = DE.Decode_Instruction()
 
     if(Operation_Validity == False):
         # As the operation is termed invalid, the instruction execution is terminated and next instruction is processed
@@ -44,16 +55,12 @@ while(PC != Instructions_Cnt):
     else:
         pass
 
-    # If the Decoded Instruction is valid, extract the register address, Inst, Operation Types and the Immediate Data.
-    ## RS1_Addr     : Address of source register 1
-    ## RS2_Addr     : Address of source register 2
-    ## RD_Addr      : Address of destination register
-    RS1_Addr, RS2_Addr, RD_Addr = DE.Get_Register_Address()
+    RS1_Addr = int(RS1_Addr, BINARY_FORMAT)
+    RS2_Addr =  int(RS2_Addr, BINARY_FORMAT)
+    RD_Addr = int(RD_Addr, BINARY_FORMAT)
+    Immediate_Data = int(Immediate_Data, BINARY_FORMAT)
 
-    ## Instruction_Type : Type of Instruction under execution
-    ## Operation_Type   : Type of operation to be  executed
-    Instruction_Type, Operation_Type = DE.Get_Instruction_Operation_Type()
-    
+        
 
     # Extraction of the registers RS1 and RS2 Data
     ## RS1  : Value of RS1 register
@@ -63,7 +70,7 @@ while(PC != Instructions_Cnt):
 
     # Set the decoded data into the ALU class data members to make it available for execution.
     EX.Set_Source_Registers(RS1, RS2)
-    EX.Set_Immediate_Data(DE.Get_Immx_Data())
+    EX.Set_Immediate_Data(Immediate_Data)
     EX.Set_Instruction_Operation_Types(Instruction_Type, Operation_Type)
 
     # Perform the ALU operation. Post the ALU operation, read the ALU Result
