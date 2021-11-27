@@ -7,8 +7,45 @@ from Port import In_Port, Out_Port
 # Import the required constants from the defines file
 from defines import *
 
-# Creation of Objects to the Memory, Decode, ALU and the Register classes
 
+def Print_Instruction_Processed(cnt, Inst_Type, Op_Type, RS1_Addr, RS2_Addr, RD_Addr, RS1, RS2, RD, Imm_Data):
+    if(Inst_Type == REGISTER_REGISTER_TYPE):
+        if(Op_Type == AND):
+            print("{}. R[{}] <- R[{}] & R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
+        elif(Op_Type == OR):
+            print("{}. R[{}] <- R[{}] || R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
+        elif(Op_Type == ADD):
+            print("{}. R[{}] <- R[{}] + R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
+        elif(Op_Type == SUB):
+            print("{}. R[{}] <- R[{}] - R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
+        elif(Op_Type == MUL):
+            print("{}. R[{}] <- R[{}] * R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
+        elif(Op_Type == DIV):
+            print("{}. R[{}] <- R[{}] / R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
+        elif(Op_Type == SL):
+            print("{}. R[{}] <- R[{}] << R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
+        elif(Op_Type == SR):
+            print("{}. R[{}] <- R[{}] >> R[{}]".format(cnt, RD_Addr, RS1_Addr, RS2_Addr))
+        else:
+            pass
+
+    elif(Inst_Type == IMMEDIATE_TYPE):
+        print("{}. R[{}] <- R[{}] + {}".format(cnt, RD_Addr, RS1_Addr, Imm_Data))
+    elif(Inst_Type == LOAD_TYPE):
+        print("{}. R[{}] <- {}(R[{}])".format(cnt, RD_Addr, Imm_Data, RS1_Addr))
+    elif(Inst_Type == STORE_TYPE):
+        print("{}. {}(R[{}]) <- R[{}]".format(cnt, Imm_Data, RS2_Addr, RS1_Addr))
+    elif(Inst_Type == BRANCH_TYPE):
+        print("{}. if(R[{}] == R[{}]) , PC = {})".format(cnt, RS1_Addr, RS2_Addr, RD))
+    elif(Inst_Type == PORT_IN_TYPE):
+        print("{}. R[31] <- In_P[{}]".format(cnt, RD_Addr))
+    elif(Inst_Type == PORT_OUT_TYPE):
+        print("{}. Out_P[{}] <- R[31] ".format(cnt, RD_Addr))
+    else:
+        pass
+    pass
+
+# Creation of Objects to the Memory, Decode, ALU and the Register classes
 DE = Decode()
 EX = ALU()
 Inst_Mem = Inst_Memory()
@@ -18,8 +55,10 @@ REG = Register()
 Instructions_Cnt = Inst_Mem.Get_Memory_Size()
 ## PC  : Program counter
 PC = 0
+inst_cnt = 0
 # Execute for each instruction from the Instruction Memory
 while(PC != Instructions_Cnt):
+    inst_cnt = inst_cnt + 1
 
     ## Branch_Flag : Indicates if a Branch has to take place or not.
     Branch_Flag = False
@@ -87,6 +126,7 @@ while(PC != Instructions_Cnt):
     if(Branch_Flag == True):
         # Branch to the required instruction if the Branch is detected and is true.
         PC = Result
+        Print_Instruction_Processed(inst_cnt, Instruction_Type, Operation_Type, RS1_Addr, RS2_Addr, RD_Addr, RS1, RS2, Result, Immediate_Data)
         continue
     else:
         pass
@@ -128,3 +168,5 @@ while(PC != Instructions_Cnt):
     
     # After processing the current instruction, increement PC to point to next instruction.
     PC = PC +1
+
+    Print_Instruction_Processed(inst_cnt, Instruction_Type, Operation_Type, RS1_Addr, RS2_Addr, RD_Addr, RS1, RS2, Result, Immediate_Data)

@@ -25,7 +25,6 @@ class Decode:
     #  @return Operation_Type       : Type of operation to be  executed
     #  @return Immediate_Data       : Immediate data that can be added to RD or to compute the target address 
 
-    
     def Decode_Instruction(self):
     
         Operation_Validity = True
@@ -61,8 +60,6 @@ class Decode:
 
             
         else:
-            pass
-
             # Decoding the Operation Type
             Operation_Type = self.__Instruction[-31-1:-25]+ self.__Instruction[-14-1:-12]
 
