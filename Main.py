@@ -111,11 +111,11 @@ while(PC != Instructions_Cnt):
     # Read the Port input data and process it for the PORT_IN_TYPE instruction. 
     if(Instruction_Type == PORT_IN_TYPE):
         # Move the Immediate data contents from the Execute stage to the Port.
-        In_Port[RD_Addr].Set_Input_Port(Result)
+        In_Port[RD_Addr].Set_Port_Data(Result)
 
     # Output the required data onto the Output port for PORT_OUT_TYPE instructions.
     elif(Instruction_Type == PORT_OUT_TYPE):
-        Out_Port[RD_Addr].Set_Output_Port(Result)
+        Out_Port[RD_Addr].Set_Port_Data(Result)
     else:
         pass
     
