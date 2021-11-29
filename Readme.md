@@ -6,7 +6,6 @@ Hence, the memory here is word addressable.
 
 
 # Top level view of the design and the SOC components
-
 '''
 +-----------------------------------------------------------------------------------------------+
 |	+--------+																					|
