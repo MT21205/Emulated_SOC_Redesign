@@ -128,4 +128,6 @@ Exceptions are detected in the following scenarios:
  2. Data_Memory.txt        : File that contains the Data in the machine language format. The Data Memory locations are initialized with this file contents.
  3. Register_Memory.txt    : File that contains the register data in the machine language format. The Registers are initialized with this file contents.
  4. Port_Data.txt          : Data is written to this file to indicate the contents of the Output Port whenever a Port_Out operation is performed.
- 5. Updated_Reg_Memory.txt : The final updated values on the registers are stored in this file.  
+ 5. Updated_Reg_Memory.txt : The final updated values on the registers are stored in this file.
+ 6. Profile_Stats.txt      : The profiling report of the package.
+ 7. index.html             : The link to the documentaion generated from doxygen.
