@@ -87,12 +87,31 @@ The rest of the Instructions outside this ISA are as below:
 
 # Operations performed
 Following are the operations that this SOC can perform:
+ - :heavy_check_mark: AND
+ - :heavy_check_mark: OR
  - :heavy_check_mark: ADD
+ - :heavy_check_mark: SUB
+ - :heavy_check_mark: MUL
+ - :heavy_check_mark: DIV
+ - :heavy_check_mark: SL
+ - :heavy_check_mark: SR
+ - :heavy_check_mark: ADDI
+ - :heavy_check_mark: LOAD
+ - :heavy_check_mark: STORE
+ - :heavy_check_mark: BEQ
+ - :heavy_check_mark: PORT_IN
+ - :heavy_check_mark: PORT_OUT
 
 
 # Instructions processing flow
-
-
+ 1. Fetch Instruction from Instruction Memory.
+ 2. Process the instruction from the Decode stage. i.e., read the RS1, RS2, RD or the offset address and the immediate value.
+ 3. Read the register contents from the register address decoded.
+ 4. Forward the Decoded data to the ALU stage to perform the required computation on the data.
+ 5. If a branch instruction is detected, then update the PC and branch to the target address computed by ALU.
+ 6. If no branch is taken, then read/write the contents from/to the Data Memory.
+ 7. The result from the above stage is written onto the destination register RD if applicable.
+ 8. The PC is increemented and the next instruction is fetched from the Instruction Memory.
 
 
 # Exception scenarios
