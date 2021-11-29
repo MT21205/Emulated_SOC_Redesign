@@ -45,7 +45,7 @@ Ex: The Memory class with it's child classes as Inst_Mem and DData_Mem.
 
 The following are the instructions used and their encoding format as per the chosen 32-bit ISA
 
-**Source : [ISA](https://msyksphinz-self.github.io/riscv-isadoc/html/rvi.html#ebreak)!**
+**Source : [ISA](https://msyksphinz-self.github.io/riscv-isadoc/html/rvi.html#xor)**
 
 
 
