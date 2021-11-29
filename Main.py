@@ -185,3 +185,7 @@ while(PC != Instructions_Cnt):
     PC = PC +1
 
     Print_Instruction_Processed(inst_cnt, Instruction_Type, Operation_Type, RS1_Addr, RS2_Addr, RD_Addr, RS1, RS2, Result, Immediate_Data)
+
+with open("Updated_Reg_Memory.txt","w") as f:
+    for idx in range(REG_CNT):
+        f.write("R["+ str(idx) +"] = " + str(Reg[idx].Get_Register_Data()) + "\n")
