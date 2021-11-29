@@ -116,7 +116,14 @@ Following are the operations that this SOC can perform:
 
 # Exception scenarios
 
-
-
+Exceptions are detected in the following scenarios:
+ 1. Attempt to Divide_By_Zero while processing DIV instruction.
+ 2. When a Invalid_Instruction is detected in the Decode stage.
+ 3. Access to Memory_Out_Of_Bounds when a read/write from/to the Data_Memory/Instruction_Memory. 
 
 # Files for input and output
+1. Instruction_Memory.txt : File that contains the encoded Instructions in the machine language format. The Instruction Memory is initialized with this file contents.
+2. Data_Memory.txt        : File that contains the Data in the machine language format. The Data Memory locations are initialized with this file contents.
+3. Register_Memory.txt    : File that contains the register data in the machine language format. The Registers are initialized with this file contents.
+4. Port_Data.txt          : Data is written to this file to indicate the contents of the Output Port whenever a Port_Out operation is performed.
+5. Updated_Reg_Memory.txt : The final updated values on the registers are stored in this file.  
