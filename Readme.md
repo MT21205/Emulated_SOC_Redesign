@@ -47,6 +47,8 @@ The following are the instructions used and their encoding format as per the cho
 
 **Source : [ISA](https://msyksphinz-self.github.io/riscv-isadoc/html/rvi.html#xor)**
 
+Note: For the port operations, the register R[31] is treated as ACC register.
+
 The rest of the Instructions outside this ISA are as below:
  - Port IN:
 ```
