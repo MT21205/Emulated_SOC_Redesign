@@ -87,7 +87,7 @@ The rest of the Instructions outside this ISA are as below:
 
 # Operations performed
 Following are the operations that this SOC can perform:
-:heavy_check_mark: ADD
+ - :heavy_check_mark: ADD
 
 
 # Instructions processing flow
